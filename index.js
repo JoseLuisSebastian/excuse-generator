@@ -17,11 +17,11 @@ function onLoad() {
         iWhat = Math.floor(Math.random()*what.length);
         iWhen = Math.floor(Math.random()*when.length);
 
-        theExcuse =  who[iWho] + action[iAction] + what[iWhat] + when[iWhen];
-
+        theExcuse =  who[iWho] + " " + action[iAction] + " " + what[iWhat] + " " + when[iWhen];
+    
         return theExcuse
 
 }
 
-
+onLoad();
 document.querySelector("#excuse").innerHTML= onLoad();
